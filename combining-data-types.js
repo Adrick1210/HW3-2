@@ -6,6 +6,7 @@ const crayonBox = {
 
 console.log(crayonBox.color[0]);
 
+// logging object values of bottle
 const bottle = {
   cap: {
     material: "metal",
@@ -16,6 +17,7 @@ const bottle = {
 console.log(bottle.cap.material);
 console.log(bottle.cap.color);
 
+// logging a object value of receipt
 const receipt = [
   {
     name: "pizza",
@@ -30,6 +32,7 @@ const receipt = [
 console.log(receipt[0].name);
 console.log(receipt[1].price);
 
+// apartment building array
 const apartmentBuilding = [["john", "beth", "christian", "chuthulu"]];
 
 console.log(apartmentBuilding[0][1]);
@@ -48,12 +51,14 @@ function knit(item, size) {
 }
 console.log(knit().item);
 
+// callback to the crayonBox array
 const crayonSelector = (crayonBox) => {
   console.log(crayonBox);
 };
 
 crayonSelector(crayonBox.color[2]);
 
+// callback option to options function
 const options = () => {
   console.log('select a song')
 }
