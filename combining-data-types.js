@@ -34,3 +34,32 @@ const apartmentBuilding = [["john", "beth", "christian", "chuthulu"]];
 
 console.log(apartmentBuilding[0][1]);
 console.log(apartmentBuilding[0][3]);
+
+//======================================================
+// Combine objects, arrays, and functions more than one level deep
+//======================================================
+
+function knit(item, size) {
+  let cloth = {
+    item: "scarf",
+    size: "6ft",
+  };
+  return cloth;
+}
+console.log(knit().item);
+
+const crayonSelector = (crayonBox) => {
+  console.log(crayonBox);
+};
+
+crayonSelector(crayonBox.color[2]);
+
+const options = () => {
+  console.log('select a song')
+}
+
+const powerButton = (option) => {
+  option();
+};
+
+powerButton(options);
