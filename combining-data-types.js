@@ -223,6 +223,6 @@ console.log(upArr);
 let bySeven = (num) => num % 7 === 0;
 console.log(nums.some(bySeven));
 
-let isA = panagram.some((letter) => letter.includes("a")
+let isA = panagram.some((letter) => letter.some("a")
 );
 console.log(isA);
