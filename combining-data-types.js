@@ -223,6 +223,8 @@ console.log(upArr);
 let bySeven = (num) => num % 7 === 0;
 console.log(nums.some(bySeven));
 
-let isA = panagram.some((letter) => letter.some("a")
+// .some(callback) takes a callback as an argument that will apply some condition to each element in the array.
+// .includes returns a boolean value completing the callback expression in the .some iteration. 
+let isA = panagram.some((letter) => letter.includes("a")
 );
 console.log(isA);
